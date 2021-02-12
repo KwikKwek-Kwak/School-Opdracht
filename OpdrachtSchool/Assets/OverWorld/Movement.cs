@@ -11,13 +11,12 @@ public class Movement : MonoBehaviour
     public float v;
 
 
-    // Start is called before the first frame update
     void Start()
     {
         moveSpeed = 10;
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         h = Input.GetAxis("Horizontal");
@@ -26,7 +25,7 @@ public class Movement : MonoBehaviour
         move.x = h;
         move.z = v;
 
-        if (Input.GetButtonDown("sprint"))
+        /*if (Input.GetButtonDown("sprint"))
         {
             moveSpeed = 20;
         }
@@ -34,7 +33,7 @@ public class Movement : MonoBehaviour
         if (Input.GetButtonUp("sprint"))
         {
             moveSpeed = 10;
-        }
+        }*/
 
 
         GetComponent<Transform>().Translate(move * Time.deltaTime * moveSpeed);
