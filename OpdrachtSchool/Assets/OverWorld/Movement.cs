@@ -25,7 +25,7 @@ public class Movement : MonoBehaviour
         move.x = h;
         move.z = v;
 
-        /*if (Input.GetButtonDown("sprint"))
+        if (Input.GetButtonDown("sprint"))
         {
             moveSpeed = 20;
         }
@@ -33,7 +33,7 @@ public class Movement : MonoBehaviour
         if (Input.GetButtonUp("sprint"))
         {
             moveSpeed = 10;
-        }*/
+        }
 
 
         GetComponent<Transform>().Translate(move * Time.deltaTime * moveSpeed);
