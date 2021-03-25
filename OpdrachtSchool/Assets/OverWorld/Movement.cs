@@ -35,7 +35,6 @@ public class Movement : MonoBehaviour
             moveSpeed = 10;
         }
 
-
         GetComponent<Transform>().Translate(move * Time.deltaTime * moveSpeed);
     }
 }
