@@ -15,11 +15,8 @@ public class Gate : MonoBehaviour
 
     public bool magDat;
 
-    public float backFire;
-
     public float timeGatePlus;
     float timeGate;
-    public Movement movement;
 
 
     void Update()
@@ -33,6 +30,11 @@ public class Gate : MonoBehaviour
         {
             gateReset();
         }
+
+        if(magDat == false)
+        {
+            force.SetActive(true);
+        }
     }
 
     public void OnTriggerEnter(Collider other)
@@ -41,6 +43,8 @@ public class Gate : MonoBehaviour
         {
             if(magDat == true)
             {
+                force.SetActive(false);
+
                 securty.SetActive(false);
                 granted.SetActive(true);
 
@@ -48,11 +52,9 @@ public class Gate : MonoBehaviour
             }
             else
             {
-                player.gameObject.GetComponent<Rigidbody>().AddForce(securty.transform.forward * backFire);
                 securty.SetActive(false);
                 deneid.SetActive(true);
 
-                movement.moveSpeed = 0;
                 deneidSound.Play();
             }
 
@@ -65,6 +67,5 @@ public class Gate : MonoBehaviour
         securty.SetActive(true);
         granted.SetActive(false);
         deneid.SetActive(false);
-        movement.moveSpeed = 10;
     }
 }
