@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Dead
   - Connect
+  - Button
   layers:
   - Default
   - TransparentFX
