@@ -16,6 +16,7 @@ public class Movement : MonoBehaviour
     public void Start()
     {
         moveSpeed = 10;
+        runSpeed = 20;
     }
 
 

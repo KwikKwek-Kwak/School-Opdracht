@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OverWorld.unity
     guid: fb0573a0fb1af2c4db9e6740bd0c4026
+  - enabled: 1
+    path: Assets/Scenes/Level Mart.unity
+    guid: b257e961a6ecbfa408aaa65e303a01b6
   m_configObjects: {}
