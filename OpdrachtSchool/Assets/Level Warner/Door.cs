@@ -5,10 +5,14 @@ using UnityEngine;
 public class Door : MonoBehaviour
 {
     public bool open;
-    public bool close;
+    public GameObject door;
 
     public void Update()
     {
-        
+        if (open == true)
+        {
+            door.GetComponent<Animator>().Play("Deur|DeurAction_001");
+            open = false;
+        }
     }
 }

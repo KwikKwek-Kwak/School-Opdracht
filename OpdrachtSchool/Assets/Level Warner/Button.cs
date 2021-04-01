@@ -19,8 +19,12 @@ public class Button : MonoBehaviour
                 if (Input.GetButtonDown("Fire1"))
                 {
                     print("door open");
-                    //door.doorOpen();
+                    door.open = true;
                 }
+            }
+            else
+            {
+                buttonImageGo.SetActive(false);
             }
         }
         else

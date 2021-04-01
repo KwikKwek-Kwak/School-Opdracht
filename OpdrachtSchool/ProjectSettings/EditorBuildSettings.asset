@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Level Warner.unity
+    guid: 4e94f9d8b5bb84b449ee2f077926d437
   m_configObjects: {}

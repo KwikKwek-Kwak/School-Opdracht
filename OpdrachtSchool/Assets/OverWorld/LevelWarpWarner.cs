@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelWarp : MonoBehaviour
+public class LevelWarpWarner : MonoBehaviour
 {
     public void OnTriggerEnter(Collider other)
     {
