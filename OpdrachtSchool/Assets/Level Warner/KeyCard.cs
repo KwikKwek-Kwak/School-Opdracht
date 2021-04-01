@@ -5,13 +5,11 @@ using UnityEngine;
 public class KeyCard : MonoBehaviour
 {
     public Gate gate;
+    public GameObject textGame3;
 
-    public void OnCollisionEnter(Collision collision)
+    public void keyCard()
     {
-        if(collision.gameObject.tag == "Player")
-        {
-            Destroy(gameObject);
-            gate.magDat = true;
-        }
+        Destroy(gameObject);
+        gate.magDat = true;
     }
 }
