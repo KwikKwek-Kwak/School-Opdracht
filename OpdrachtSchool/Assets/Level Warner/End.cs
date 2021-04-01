@@ -29,7 +29,7 @@ public class End : MonoBehaviour
         {
             if(timer > warp)
             {
-                SceneManager.LoadScene(1);
+                SceneManager.LoadScene(0);
                 movement.runSpeed = 20;
             }
             else
