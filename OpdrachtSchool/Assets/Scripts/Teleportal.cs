@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelWarp : MonoBehaviour
+public class Teleportal : MonoBehaviour
 {
     public void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 }
+
