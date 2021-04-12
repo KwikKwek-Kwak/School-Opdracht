@@ -10,14 +10,17 @@ public class Movement : MonoBehaviour
     public float h;
     public float v;
 
+    public float runSpeed;
 
-    void Start()
+
+    public void Start()
     {
         moveSpeed = 10;
+        runSpeed = 20;
     }
 
 
-    void Update()
+    public void Update()
     {
         h = Input.GetAxis("Horizontal");
         v = Input.GetAxis("Vertical");
@@ -27,7 +30,7 @@ public class Movement : MonoBehaviour
 
         if (Input.GetButtonDown("sprint"))
         {
-            moveSpeed = 20;
+            moveSpeed = runSpeed;
         }
 
         if (Input.GetButtonUp("sprint"))
